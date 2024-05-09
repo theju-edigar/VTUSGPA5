@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test1.css">
+    <title>SGPA Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>VTU, CSE 5th sem SGPA calculator [2021 batch]</h1>
+        
+        <div id="subject-code">
+            <button id="openlistbutton" type="button" onclick="openlist()">Subject list with codes</button>
+            <div id="subject-list" style="display: none;">
+                <br><b>Subjects with subject code:</b>
+                <br><br>ATC [21CS51]
+                <br><br>CN [21CS52]
+                <br><br>DBMS [21CS53]
+                <br><br>AML [21CS54]
+                <br><br>DBMSL [21CSL55]
+                <br><br>RM [21RM156]
+                <br><br>EVS [21CIV57]
+                <br><br>AJS [21CS582]
+            </div>
+        </div>
+        <br><br>
+
+
+        <div class="marks-input">
+            <b>Enter marks</b><br><br>
+            <form id="sgpaForm">
+                <div class="subject-input">
+                    <label for="21CS51">21CS51:</label> <input type="number" id="21CS51" required>
+                </div>
+            
+                <div class="subject-input">
+                    <label for="21CS52">21CS52:</label> <input type="number" id="21CS52" required>
+                </div>
+            
+                <div class="subject-input">
+                    <label for="21CS53">21CS53:</label> <input type="number" id="21CS53" required>
+                </div>
+            
+                <div class="subject-input">
+                    <label for="21CS54">21CS54:</label> <input type="number" id="21CS54" required>
+                </div>
+            
+                <div class="subject-input">
+                    <label for="21CSL55">21CSL55:</label> <input type="number" id="21CSL55" required>
+                </div>
+            
+                <div class="subject-input">
+                    <label for="21RM156">21RM156:</label> <input type="number" id="21RM156" required>
+                </div>
+            
+                <div class="subject-input">
+                    <label for="21CIV57">21CIV57:</label> <input type="number" id="21CIV57" required>
+                </div>
+            
+                <div class="subject-input">
+                    <label for="21CS582">21CS582:</label> <input type="number" id="21CS582" required>
+                </div>
+            
+                <button type="button" onclick="calculateSGPA()">Calculate SGPA</button>
+            </form>
+            
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="test1.js"></script>
+</body>
+</html>
